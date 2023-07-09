@@ -1,7 +1,8 @@
 ---
 - hosts: all
-
+  
   become: true
+  host myip.opendns.com resolver1.opendns.com | grep myip
   tasks:
     - name: update yum packages
       yum:
