@@ -5,4 +5,10 @@
   tasks:
     - name update yum packages
       yum:
-        check-update: yes
+        name: 
+          - nano
+          - wget
+          - unzip
+          - Docker
+        state: latest
+        update_cache: true
