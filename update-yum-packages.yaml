@@ -4,5 +4,5 @@
   become: true
   tasks:
     - name update yum packages
-      dnf:
-        update: yes
+      yum:
+        check-update: yes
